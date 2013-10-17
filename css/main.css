@@ -1,0 +1,61 @@
+/* Sidebar
+ ********************************************************************************/
+.sidebar {
+    position: absolute;
+    padding: 10px;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    width: 24%;
+    overflow: auto;
+
+    background-color: #f9f9f9;
+    border-right: 1px solid #e5e5e5;
+}
+
+.sidebar .row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.sidebar .row + .row {
+    margin-top: 10px;
+}
+.sidebar .row .col-md-3,
+.sidebar .row .col-md-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.sidebar .form-control,
+.sidebar .input-group-addon {
+    padding: 0 4px;
+    height: 24px;
+    border-radius: 0px;
+    text-align: center;
+}
+
+.sidebar .input-group-addon {
+    font-size: 10px;
+}
+
+
+
+
+/* Stage
+ ********************************************************************************/
+.stage {
+    position: absolute;
+    padding: 10px;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    left: 24%;
+    overflow: auto;
+
+    margin: 0;
+    background-color: #1a1a1a;
+    border: 0;
+    border-radius: 0;
+    color: #f9f9f9;
+    font-weight: bold;
+}
