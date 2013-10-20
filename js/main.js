@@ -58,7 +58,7 @@
                 if (register > 0) {
                     next = location;
                 }
-                message = 'Branch to '+ location +' on position'
+                message = 'Branch to '+ location +' on positive';
                 break;
             case '9': // I/O
                 switch (location) {
@@ -88,7 +88,7 @@
         var step = $('input[name="i'+ getPosition() +'"]').val();
         if (step && step.length === 3) {
             var next = method(step);
-            if(next) {setTimeout(function() {doStep(next);}, 1000);}
+            if(next > -1 && next < 100) {setTimeout(function() {doStep(next);}, 1000);}
         } else {
             console.warn('No Step & No Stop...');
         }
